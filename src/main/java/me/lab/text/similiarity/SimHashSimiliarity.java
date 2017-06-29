@@ -46,7 +46,7 @@ public class SimHashSimiliarity {
 			BitSet hash = tokensHashes.get(i);
 			for (int index = 0; index < hash.size(); index++) {
 				if (hash.get(index)) {
-					features[index]++;// can be extended to change weight per token
+					features[index]++;// features[index]+item.weight; //can be extended to change weight per token
 				} else {
 					features[index]--;
 				}
